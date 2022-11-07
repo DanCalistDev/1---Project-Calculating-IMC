@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./js/index.js" defer type="module"></script>
+
+</head>
+
+<body>
+
+  <div class="alert-error">
+    Digite somente números
+  </div>
+
+  <div class="container">
+    <main class="card">
+      <form action="">
+        <h1 class="title">Cálculo de IMC</h1>
+        <div class="input-wrapper">
+          <label for="weight">Peso (kg)</label>
+          <input id="weight" type="text" placeholder="60">
+        </div>
+        <div class="input-wrapper">
+          <label for="height">Altura(cm)</label>
+          <input id="height" type="text" placeholder="165">
+        </div>
+        <button type="submit">Calcular IMC <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" backgroung="writhe" />
+          </svg></button>
+      </form>
+    </main>
+  </div>
+
+  <div class="modal-wrapper">
+    <div class="modal card">
+      <h2 class="title">
+        <button class="close">
+          <img src="./img/iconmonstr-x-mark-thin.svg" alt="imagem para fechar o popup">
+        </button>
+        <span></span>
+      </h2>
+    </div>
+  </div>
+</body>
+
+</html>
